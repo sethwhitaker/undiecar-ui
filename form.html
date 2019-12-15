@@ -1,0 +1,813 @@
+<form id="host_a_race_form" action="http://members.iracing.com/membersite/member/LaunchHostedSession.do" method="post">
+	
+	<input name="sessionName" maxlength="64" id="sessionName" value="NASCAR Homestead Long Race">
+    <input name="sessionPassword" id="sessionPWInput1" maxlength="32">
+    <input id="sessionPWInput2" maxlength="32"">     
+    <input type="checkbox" id="toggleRandomWeather" title="Select to enable dynamic weather." checked="checked">
+    <input type="hidden" name="weatherType" id="realweatherTypes" value="3">
+    <input type="text" name="weatherTemp" class="tempValue temp halfinput" value="10">
+    <select name="weatherTempChoice" id="selectTempType"">
+        <option value="0" selected="selected">°F</option>
+        <option value="1">°C</option>
+    </select>
+    <input type="text" name="weatherHumidity" class="humidityValue nodrop">
+    <input type="hidden" name="weatherFog" id="fogOption" value="0">     
+    <input type="text" name="weatherWindSpeed" class="windValue halfinput">
+    <select name="weatherWindSpeedChoice" id="selectWindtype">
+        <option selected="selected" value="0">MPH</option>
+        <option value="1">KPH</option>
+    </select>
+	<input type="hidden" name="weatherWindDirection" id="weatherWindDirection" value="0">
+    <select id="cloudCoverSelect" name="weatherCloudCover">
+        <option value="3">Overcast</option>
+        <option value="1" selected="selected">Partly Cloudy</option>
+        <option value="2">Mostly Cloudy</option>
+        <option value="0">Clear</option>
+    </select>
+    <select name="sessionDur" id="sessionDurSelect">
+        <option value="1">1 hour</option>
+        <option value="2">2 hours</option>
+        <option value="3">3 hours</option>
+        <option value="4">4 hours</option>
+        <option value="5">5 hours</option>
+        <option value="6">6 hours</option>
+        <option value="7">7 hours</option>
+        <option value="8">8 hours</option>
+        <option value="9">9 hours</option>
+        <option value="10">10 hours</option>
+        <option value="11">11 hours</option>
+        <option value="12">12 hours</option>
+        <option value="13">13 hours</option>
+        <option value="14">14 hours</option>
+        <option value="15">15 hours</option>
+        <option value="16">16 hours</option>
+        <option value="17">17 hours</option>
+        <option value="18">18 hours</option>
+        <option value="19">19 hours</option>
+        <option value="20">20 hours</option>
+        <option value="21">21 hours</option>
+        <option value="22">22 hours</option>
+        <option value="23">23 hours</option>
+        <option value="24">24 hours</option>
+        <option value="25">25 hours</option>
+    </select>
+    <input id="datePicker"  hasDatepicker" >
+    <input id="timePicker">
+    <input type="hidden" name="startAt" id="startAt">
+    <input type="hidden" name="rcdPractice" id="rcdPractice">
+    <input type="hidden" name="rcdQual" id="rcdQual">
+    <input type="hidden" name="rcdRace" id="rcdRace">
+       
+    <select name="farmId" id="serverSelect">
+        <option value="6">US-Bos</option>
+        <option value="9">AU-Syd</option>
+        <option value="11">NL-Ams</option>
+    </select>
+      
+    <select name="maxNumDrivers" id="racersSelect">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+        <option value="10">10</option>
+        <option value="11">11</option>
+        <option value="12">12</option>
+        <option value="13">13</option>
+        <option value="14">14</option>
+        <option value="15">15</option>
+        <option value="16">16</option>
+        <option value="17">17</option>
+        <option value="18">18</option>
+        <option value="19">19</option>
+        <option value="20">20</option>
+        <option value="21">21</option>
+        <option value="22">22</option>
+        <option value="23">23</option>
+        <option value="24">24</option>
+        <option value="25">25</option>
+        <option value="26">26</option>
+        <option value="27">27</option>
+        <option value="28">28</option>
+        <option value="29">29</option>
+        <option value="30">30</option>
+        <option value="31">31</option>
+        <option value="32">32</option>
+        <option value="33">33</option>
+        <option value="34">34</option>
+        <option value="35">35</option>
+        <option value="36">36</option>
+        <option value="37">37</option>
+        <option value="38">38</option>
+        <option value="39">39</option>
+        <option value="40">40</option>
+        <option value="41">41</option>
+        <option value="42">42</option>
+        <option value="43">43</option>
+        <option value="44">44</option>
+        <option value="45">45</option>
+        <option value="46">46</option>
+        <option value="47">47</option>
+        <option value="48">48</option>
+        <option value="49">49</option>
+        <option value="50">50</option>
+        <option value="51">51</option>
+        <option value="52">52</option>
+        <option value="53">53</option>
+        <option value="54">54</option>
+        <option value="55">55</option>
+        <option value="56">56</option>
+        <option value="57">57</option>
+        <option value="58">58</option>
+        <option value="59">59</option>
+        <option value="60">60</option>
+    </select>
+       
+    <select name="trackId" id="trackSelect">
+        <option value="323">Atlanta Motor Speedway - Rallycross Long</option>
+        <option value="322">Atlanta Motor Speedway - Rallycross Short</option>
+        <option value="52">Atlanta Motor Speedway - Legends Oval</option>
+        <option value="51">Atlanta Motor Speedway - Road Course</option>
+        <option value="53">Atlanta Motor Speedway - Oval</option>
+        <option value="226">Auto Club Speedway - Competition</option>
+        <option value="228">Auto Club Speedway - Interior</option>
+        <option value="227">Auto Club Speedway - Moto</option>
+        <option value="225">Auto Club Speedway - Oval</option>
+        <option value="267">Autodromo Internazionale Enzo e Dino Ferrari - Moto</option>
+        <option value="266">Autodromo Internazionale Enzo e Dino Ferrari - Grand Prix</option>
+        <option value="245">Autodromo Nazionale Monza - Oval - Left turning</option>
+        <option value="243">Autodromo Nazionale Monza - Oval - Right turning</option>
+        <option value="241">Autodromo Nazionale Monza - Junior</option>
+        <option value="240">Autodromo Nazionale Monza - Combined without chicanes</option>
+        <option value="246">Autodromo Nazionale Monza - Combined without first chicane</option>
+        <option value="247">Autodromo Nazionale Monza - Combined</option>
+        <option value="242">Autodromo Nazionale Monza - GP without chicanes</option>
+        <option value="244">Autodromo Nazionale Monza - GP without first chicane</option>
+        <option value="239">Autodromo Nazionale Monza - Grand Prix</option>
+        <option value="213">Autódromo José Carlos Pace - Moto</option>
+        <option value="212">Autódromo José Carlos Pace - Grand Prix</option>
+        <option value="100">Barber Motorsports Park - Short B</option>
+        <option value="99">Barber Motorsports Park - Short A</option>
+        <option value="46">Barber Motorsports Park - Full Course</option>
+        <option value="146">Brands Hatch Circuit - Indy</option>
+        <option value="145">Brands Hatch Circuit - Grand Prix</option>
+        <option value="101">Bristol Motor Speedway</option>
+        <option value="144">Canadian Tire Motorsports Park</option>
+        <option value="143">Centripetal Circuit</option>
+        <option value="330">Charlotte Motor Speedway - Roval</option>
+        <option value="38">Charlotte Motor Speedway - 2016 - Infield Road Course</option>
+        <option value="39">Charlotte Motor Speedway - 2016 - Legends Oval</option>
+        <option value="37">Charlotte Motor Speedway - 2016 - Road Course</option>
+        <option value="40">Charlotte Motor Speedway - 2016 - Oval</option>
+        <option value="123">Chicagoland Speedway</option>
+        <option value="218">Circuit Gilles Villeneuve</option>
+        <option value="151">Circuit Park Zandvoort - Oostelijk</option>
+        <option value="148">Circuit Park Zandvoort - Club</option>
+        <option value="147">Circuit Park Zandvoort - Chicane</option>
+        <option value="150">Circuit Park Zandvoort - National</option>
+        <option value="149">Circuit Park Zandvoort - Grand Prix</option>
+        <option value="200">Circuit Zolder - Alternate</option>
+        <option value="199">Circuit Zolder - Grand Prix</option>
+        <option value="163">Circuit de Spa-Francorchamps - Grand Prix Pits</option>
+        <option value="164">Circuit de Spa-Francorchamps - Classic Pits</option>
+        <option value="165">Circuit de Spa-Francorchamps - Endurance</option>
+        <option value="269">Circuit des 24 Heures du Mans - Historic</option>
+        <option value="268">Circuit des 24 Heures du Mans - 24 Heures du Mans</option>
+        <option value="230">Circuit of the Americas - East</option>
+        <option value="229">Circuit of the Americas - Grand Prix</option>
+        <option value="231">Circuit of the Americas - West</option>
+        <option value="15">Concord Speedway</option>
+        <option value="115">Darlington Raceway</option>
+        <option value="194">Daytona International Speedway - Short</option>
+        <option value="191">Daytona International Speedway - Oval</option>
+        <option value="192">Daytona International Speedway - Road Course</option>
+        <option value="193">Daytona International Speedway - Moto</option>
+        <option value="293">Daytona International Speedway - 2007 - Rallycross Long</option>
+        <option value="296">Daytona International Speedway - 2007 - Rallycross Short</option>
+        <option value="29">Daytona International Speedway - 2007 - Short</option>
+        <option value="28">Daytona International Speedway - 2007 - Moto</option>
+        <option value="26">Daytona International Speedway - 2007 - Road Course</option>
+        <option value="27">Daytona International Speedway - 2007 - Oval</option>
+        <option value="319">Detroit Grand Prix at Belle Isle - Belle Isle</option>
+        <option value="234">Donington Park Racing Circuit - National</option>
+        <option value="233">Donington Park Racing Circuit - Grand Prix</option>
+        <option value="162">Dover International Speedway</option>
+        <option value="273">Eldora Speedway</option>
+        <option value="248">Five Flags Speedway</option>
+        <option value="237">Gateway Motorsports Park - Oval</option>
+        <option value="238">Gateway Motorsports Park - Road Course</option>
+        <option value="22">Homestead Miami Speedway - Road Course B</option>
+        <option value="21">Homestead Miami Speedway - Road Course A</option>
+        <option value="20">Homestead Miami Speedway - Oval</option>
+        <option value="235">ISM Raceway - Oval</option>
+        <option value="236">ISM Raceway - Oval w/open dogleg</option>
+        <option value="135">Indianapolis Motor Speedway - Bike</option>
+        <option value="134">Indianapolis Motor Speedway - Road Course</option>
+        <option value="133">Indianapolis Motor Speedway - Oval</option>
+        <option value="178">Indianapolis Motor Speedway - IndyCar Oval</option>
+        <option value="169">Iowa Speedway - Oval</option>
+        <option value="171">Iowa Speedway - Legends</option>
+        <option value="170">Iowa Speedway - Road Course</option>
+        <option value="172">Iowa Speedway - Infield Legends</option>
+        <option value="295">Iowa Speedway - Rallycross</option>
+        <option value="217">Irwindale Speedway - Figure Eight</option>
+        <option value="30">Irwindale Speedway - Outer - Inner</option>
+        <option value="19">Irwindale Speedway - Inner</option>
+        <option value="23">Irwindale Speedway - Outer</option>
+        <option value="216">Kansas Speedway - Infield Road Course</option>
+        <option value="214">Kansas Speedway - Oval</option>
+        <option value="215">Kansas Speedway - Road Course</option>
+        <option value="188">Kentucky Speedway - Oval</option>
+        <option value="189">Kentucky Speedway - Legends</option>
+        <option value="305">Knoxville Raceway</option>
+        <option value="320">Kokomo Speedway</option>
+        <option value="201">Langley Speedway</option>
+        <option value="17">Lanier National Speedway</option>
+        <option value="288">Lanier National Speedway - Dirt</option>
+        <option value="113">Las Vegas Motor Speedway - Infield Legends Oval</option>
+        <option value="112">Las Vegas Motor Speedway - Road Course Short</option>
+        <option value="111">Las Vegas Motor Speedway - Road Course Long</option>
+        <option value="114">Las Vegas Motor Speedway - Road Course Combined</option>
+        <option value="110">Las Vegas Motor Speedway - Legends Oval</option>
+        <option value="103">Las Vegas Motor Speedway - Oval</option>
+        <option value="303">Limaland Motorsports Park</option>
+        <option value="160">Lime Rock Park - School</option>
+        <option value="34">Lime Rock Park - Chicane</option>
+        <option value="1">Lime Rock Park - Full Course</option>
+        <option value="179">Long Beach Street Circuit</option>
+        <option value="232">Lucas Oil Raceway - Oval</option>
+        <option value="304">Lucas Oil Raceway - Rallycross</option>
+        <option value="33">Martinsville Speedway</option>
+        <option value="276">Michigan International Speedway</option>
+        <option value="124">Michigan International Speedway - 2014</option>
+        <option value="157">Mid-Ohio Sports Car Course - Alt Oval</option>
+        <option value="156">Mid-Ohio Sports Car Course - Oval</option>
+        <option value="155">Mid-Ohio Sports Car Course - Short</option>
+        <option value="154">Mid-Ohio Sports Car Course - Chicane</option>
+        <option value="153">Mid-Ohio Sports Car Course - Full Course</option>
+        <option value="219">Mount Panorama Circuit</option>
+        <option value="286">Myrtle Beach Speedway</option>
+        <option value="222">New Hampshire Motor Speedway - Legends</option>
+        <option value="130">New Hampshire Motor Speedway - Road Course with North Oval</option>
+        <option value="132">New Hampshire Motor Speedway - Road Course with South Oval</option>
+        <option value="129">New Hampshire Motor Speedway - Road Course</option>
+        <option value="131">New Hampshire Motor Speedway - Oval</option>
+        <option value="224">New Jersey Motorsports Park - Thunderbolt w/second chicane</option>
+        <option value="221">New Jersey Motorsports Park - Thunderbolt w/both chicanes</option>
+        <option value="223">New Jersey Motorsports Park - Thunderbolt w/first chicane</option>
+        <option value="220">New Jersey Motorsports Park - Thunderbolt</option>
+        <option value="190">New Smyrna Speedway</option>
+        <option value="264">Nürburgring Combined - Gesamtstrecke Long</option>
+        <option value="262">Nürburgring Combined - Gesamtstrecke VLN</option>
+        <option value="252">Nürburgring Combined - Gesamtstrecke 24h</option>
+        <option value="263">Nürburgring Combined - Gesamtstrecke Short w/out Arena</option>
+        <option value="261">Nürburgring Grand-Prix-Strecke - Müllenbachschleife</option>
+        <option value="260">Nürburgring Grand-Prix-Strecke - Kurzanbindung w/out Arena</option>
+        <option value="259">Nürburgring Grand-Prix-Strecke - Sprintstrecke</option>
+        <option value="255">Nürburgring Grand-Prix-Strecke - BES/WEC</option>
+        <option value="250">Nürburgring Grand-Prix-Strecke - Grand Prix</option>
+        <option value="257">Nürburgring Grand-Prix-Strecke - Grand Prix w/out Arena</option>
+        <option value="253">Nürburgring Nordschleife - Touristenfahrten</option>
+        <option value="249">Nürburgring Nordschleife - Industriefahrten</option>
+        <option value="166">Okayama International Circuit - Full Course</option>
+        <option value="167">Okayama International Circuit - Short</option>
+        <option value="211">Oran Park Raceway - Moto</option>
+        <option value="210">Oran Park Raceway - North B</option>
+        <option value="209">Oran Park Raceway - North A</option>
+        <option value="207">Oran Park Raceway - North</option>
+        <option value="208">Oran Park Raceway - South</option>
+        <option value="202">Oran Park Raceway - Grand Prix</option>
+        <option value="184">Oulton Park Circuit - Intl w/out Brittens</option>
+        <option value="182">Oulton Park Circuit - Island</option>
+        <option value="181">Oulton Park Circuit - Fosters</option>
+        <option value="186">Oulton Park Circuit - Fosters w/Hislop</option>
+        <option value="185">Oulton Park Circuit - Intl w/no Chicanes</option>
+        <option value="183">Oulton Park Circuit - Intl w/out Hislop</option>
+        <option value="180">Oulton Park Circuit - International</option>
+        <option value="187">Oulton Park Circuit - Island Historic</option>
+        <option value="12">Oxford Plains Speedway</option>
+        <option value="152">Phillip Island Circuit</option>
+        <option value="306">Phoenix International Raceway - 2008 - Rallycross</option>
+        <option value="105">Phoenix International Raceway - 2008 - Road Course</option>
+        <option value="104">Phoenix International Raceway - 2008 - Oval</option>
+        <option value="277">Pocono Raceway</option>
+        <option value="139">Pocono Raceway - 2011 - North</option>
+        <option value="138">Pocono Raceway - 2011 - South</option>
+        <option value="137">Pocono Raceway - 2011 - East</option>
+        <option value="140">Pocono Raceway - 2011 - International</option>
+        <option value="136">Pocono Raceway - 2011 - Oval</option>
+        <option value="31">Richmond Raceway</option>
+        <option value="50">Road America - Bend</option>
+        <option value="18">Road America - Full Course</option>
+        <option value="128">Road Atlanta - Short</option>
+        <option value="126">Road Atlanta - Club</option>
+        <option value="127">Road Atlanta - Full Course</option>
+        <option value="206">Rockingham Speedway - Short Road Course</option>
+        <option value="205">Rockingham Speedway - Infield Road Course</option>
+        <option value="204">Rockingham Speedway - Road Course</option>
+        <option value="203">Rockingham Speedway - Oval</option>
+        <option value="96">Sebring International Raceway - Modified</option>
+        <option value="97">Sebring International Raceway - Club</option>
+        <option value="95">Sebring International Raceway - International</option>
+        <option value="44">Silverstone Circuit - National</option>
+        <option value="45">Silverstone Circuit - Southern</option>
+        <option value="43">Silverstone Circuit - International</option>
+        <option value="42">Silverstone Circuit - Historical Grand Prix</option>
+        <option value="41">Silverstone Circuit - Grand Prix</option>
+        <option value="297">Snetterton Circuit - 300</option>
+        <option value="298">Snetterton Circuit - 200</option>
+        <option value="299">Snetterton Circuit - 100</option>
+        <option value="312">Sonoma Raceway - Rallycross</option>
+        <option value="49">Sonoma Raceway - IRL 2007</option>
+        <option value="98">Sonoma Raceway - Long</option>
+        <option value="48">Sonoma Raceway - Cup</option>
+        <option value="102">Sonoma Raceway - IRL</option>
+        <option value="14">South Boston Speedway</option>
+        <option value="256">Southern National Motorsports Park</option>
+        <option value="11">Stafford Motor Speedway - Full Course</option>
+        <option value="159">Summit Point Raceway - School</option>
+        <option value="142">Summit Point Raceway - Jefferson Reverse</option>
+        <option value="24">Summit Point Raceway - Short</option>
+        <option value="8">Summit Point Raceway - Jefferson Circuit</option>
+        <option value="9">Summit Point Raceway - Summit Point Raceway</option>
+        <option value="174">Suzuka International Racing Course - East</option>
+        <option value="175">Suzuka International Racing Course - West</option>
+        <option value="168">Suzuka International Racing Course - Grand Prix</option>
+        <option value="173">Suzuka International Racing Course - Moto</option>
+        <option value="176">Suzuka International Racing Course - West w/chicane</option>
+        <option value="116">Talladega Superspeedway</option>
+        <option value="119">Texas Motor Speedway - Road Course Short B</option>
+        <option value="118">Texas Motor Speedway - Road Course Short A</option>
+        <option value="117">Texas Motor Speedway - Road Course Long</option>
+        <option value="122">Texas Motor Speedway - Road Course Combined</option>
+        <option value="120">Texas Motor Speedway - Legends Oval</option>
+        <option value="121">Texas Motor Speedway - Oval</option>
+        <option value="271">The Bullring</option>
+        <option value="314">The Dirt Track at Charlotte</option>
+        <option value="94">The Milwaukee Mile</option>
+        <option value="161">Thompson Speedway Motorsports Park - Oval</option>
+        <option value="333">Tsukuba Circuit - 1000 Full Reverse</option>
+        <option value="329">Tsukuba Circuit - 1000 Chicane</option>
+        <option value="328">Tsukuba Circuit - 1000 Outer</option>
+        <option value="327">Tsukuba Circuit - 1000 Full</option>
+        <option value="326">Tsukuba Circuit - 2000 Short</option>
+        <option value="325">Tsukuba Circuit - 2000 Moto</option>
+        <option value="324">Tsukuba Circuit - 2000 Full</option>
+        <option value="195">Twin Ring Motegi - Grand Prix</option>
+        <option value="197">Twin Ring Motegi - West</option>
+        <option value="198">Twin Ring Motegi - Oval</option>
+        <option value="196">Twin Ring Motegi - East</option>
+        <option value="16">USA International Speedway</option>
+        <option value="275">USA International Speedway - Dirt</option>
+        <option value="141">Virginia International Raceway - Patriot Reverse</option>
+        <option value="6">Virginia International Raceway - Grand East</option>
+        <option value="5">Virginia International Raceway - Grand West</option>
+        <option value="3">Virginia International Raceway - Patriot</option>
+        <option value="4">Virginia International Raceway - North</option>
+        <option value="7">Virginia International Raceway - South</option>
+        <option value="2">Virginia International Raceway - Full Course</option>
+        <option value="279">Volusia Speedway Park</option>
+        <option value="109">Watkins Glen International - Classic</option>
+        <option value="108">Watkins Glen International - Classic Boot</option>
+        <option value="107">Watkins Glen International - Boot</option>
+        <option value="106">Watkins Glen International - Cup</option>
+        <option value="158">WeatherTech Raceway at Laguna Seca - School</option>
+        <option value="47">WeatherTech Raceway at Laguna Seca - Full Course</option>
+        <option value="274">Williams Grove Speedway</option>
+    </select>
+           
+    <select id="Hosted_TimeOfDaySelect" name="timeOfDay" class="marginbottom2 marginright5">
+        <option value="5">Sunrise</option>
+        <option value="1">Morning</option>
+        <option value="0">Afternoon</option>
+        <option value="2">Late Afternoon</option>
+        <option value="8">Sunset</option>
+        <option value="3">Night</option>
+    </select>
+
+    <span id="earthSpeedupText">1x</span>
+    
+    <div id="timeOfDayDate">2018-05-15 6:53 pm</div>
+
+    <input id="simulatedStartTime" name="simulatedStartTime" type="hidden" value="">
+    <input id="earthSpeedup" name="earthSpeedup" type="hidden" value="1">
+    <input id="simulatedTimeOffsets" name="simulatedTimeOffsets" type="hidden" value="">
+    
+    <span id="timeOfDaySunTimes">6:33 am/8:10 pm</span>
+
+    <input type="hidden" name="useMetricMeasurement" id="useMetricMeasurement" value="0">
+    <input type="hidden" name="multiClass" id="multiClass">
+    <input type="checkbox" name="fixedSetup" id="fixedSetup" value="1">
+                  
+           
+    <select class="hosted_session_carclass_select">
+        <optgroup label="Car count: 1">
+            <option value="72">Aston Martin</option>
+            <option value="83">Audi 90 GTO</option>
+            <option value="113">Audi R18</option>
+            <option value="80">Audi R8 GT3</option>
+            <option value="61">BMW Z4 GT3</option>
+            <option value="45">Cadillac CTS-VR</option>
+            <option value="64">Chevrolet Camaro Class B</option>
+            <option value="696">Chevrolet Camaro ZL1</option>
+            <option value="70">Chevrolet Silverado</option>
+            <option value="49">Chevrolet SS-Gen6</option>
+            <option value="23">Corvette C6R GT1</option>
+            <option value="77">Corvette C7 Daytona Prototype</option>
+            <option value="63">Dallara DW12</option>
+            <option value="870">Dallara F3</option>
+            <option value="26">Dallara IndyCar</option>
+            <option value="117">Dallara IR18</option>
+            <option value="85">Dirt Late Model - Limited</option>
+            <option value="90">Dirt Late Model - Pro</option>
+            <option value="91">Dirt Late Model - Super</option>
+            <option value="89">Dirt Legends</option>
+            <option value="104">Dirt Midget</option>
+            <option value="87">Dirt SprintCar - 305</option>
+            <option value="92">Dirt SprintCar - 360</option>
+            <option value="96">Dirt SprintCar - 360wingless</option>
+            <option value="93">Dirt Sprintcar - 410</option>
+            <option value="94">Dirt SprintCar - 410wingless</option>
+            <option value="86">Dirt Street Stock</option>
+            <option value="103">Dirt UMP Modified</option>
+            <option value="102">Ferrari 488 GT3</option>
+            <option value="99">Ferrari 488 GTE</option>
+            <option value="25">FG01 V8 - circa 2012</option>
+            <option value="68">Ford Falcon FG V8</option>
+            <option value="88">Ford Fiesta RS WRC</option>
+            <option value="51">Ford Fusion</option>
+            <option value="41">Ford GT</option>
+            <option value="98">Ford GT - 2017</option>
+            <option value="65">Ford GT GT3</option>
+            <option value="28">Ford Mustang FR500S</option>
+            <option value="81">Formula Renault 2.0</option>
+            <option value="871">Formula Renault 3.5</option>
+            <option value="66">Holden Commodore VF V8</option>
+            <option value="40">HPD ARX-01c</option>
+            <option value="36">Impala Class B</option>
+            <option value="19">Impala SS Class A</option>
+            <option value="21">K&amp;N Series</option>
+            <option value="48">Kia Optima</option>
+            <option value="5">Legends</option>
+            <option value="46">Lotus 49</option>
+            <option value="22">Lotus 79</option>
+            <option value="32">Mazda MX-5 Cup</option>
+            <option value="74">Mazda MX-5 Cup 2016</option>
+            <option value="33">Mazda MX-5 Roadster</option>
+            <option value="47">McLaren MP4-12C GT3</option>
+            <option value="78">McLaren MP4-30</option>
+            <option value="79">Mercedes AMG GT3</option>
+            <option value="14">Monte Carlo SS</option>
+            <option value="56">Mustang Class B</option>
+            <option value="84">Nissan GTP</option>
+            <option value="95">Porsche 911 GT3 Cup</option>
+            <option value="472">Porsche 911 RSR</option>
+            <option value="115">Porsche 919</option>
+            <option value="4">Pro Mazda</option>
+            <option value="15">Radical SR8</option>
+            <option value="18">Riley Daytona Prototype</option>
+            <option value="12">Rookie Legends</option>
+            <option value="13">Rookie Solstice</option>
+            <option value="53">Ruf RT 12R AWD</option>
+            <option value="54">Ruf RT 12R RWD</option>
+            <option value="55">Ruf RT 12R Track</option>
+            <option value="58">Ruf RT12R CSpec</option>
+            <option value="16">Silver Crown</option>
+            <option value="17">Silverado</option>
+            <option value="2">SK Modified</option>
+            <option value="1">Skip Barber Race Series</option>
+            <option value="3">Solstice</option>
+            <option value="20">Spec Racer Ford</option>
+            <option value="35">Sprint Car</option>
+            <option value="34">Street Stock</option>
+            <option value="471">Subaru WRX STI</option>
+            <option value="60">Super Late Model</option>
+            <option value="76">Toyota Camry 2015</option>
+            <option value="62">Toyota Camry-Gen6</option>
+            <option value="69">Toyota Tundra</option>
+            <option value="97">VW Beetle GRC</option>
+            <option value="24">VW Jetta TDI Cup</option>
+            <option value="29">Whelen Modified</option>
+            <option value="30">Williams FW31</option>
+        </optgroup>
+        <optgroup label="Car count: 2">
+            <option value="71">Camping World Series</option>
+            <option value="73">GT1 Class</option>
+            <option value="473">IMSA2 GT3</option>
+            <option value="116">LMP1 Class</option>
+            <option value="31">Mazda MX-5</option>
+            <option value="107">USAC Sprint</option>
+            <option value="67">V8Supercars</option>
+        </optgroup>
+        <optgroup label="Car count: 3">
+            <option value="82">GT3 German</option>
+            <option value="100">GTE Class</option>
+            <option value="101">IMSA GT3</option>
+            <option value="105">Rallycross</option>
+            <option value="50">Sprint Cup</option>
+            <option value="57">Xfinity Series</option>
+        </optgroup>
+        <optgroup label="Car count: 4">
+            <option value="52">Ruf RT 12R</option>
+        </optgroup>
+        <optgroup label="Car count: 5">
+            <option value="114">GT3 Bathurst</option>
+        </optgroup>
+        <optgroup label="Car count: 6">
+            <option value="59">GT3 Class</option>
+        </optgroup>
+    </select>
+
+
+    <select class="hosted_session_car_select" name="carId28" id="carSelect28">
+        <option value="64">Aston Martin DBR9 GT1</option>
+        <option value="26" style="">Chevrolet Corvette C6.R GT1</option>
+    </select>
+    <input class="fuel_fill_input" name="maxPctFuelFillId28" id="maxPctFuelFillId28">
+
+	<input class="weight_penalty_input" name="weightPenaltyId28" id="weightPenaltyId28" title="Max weight penalty for this car is 551.16 lb">
+	<input id="carSetupRaceName28" readonly="" title="---">
+	<input type="hidden" class="fixedSetupRaceId" name="carSetupRaceId28" id="carSetupRaceId28" value="undefined">
+    <input id="carSetupQualName28" readonly="" title="---" >
+    <input type="hidden" class="fixedSetupQualId" name="carSetupQualId28" id="carSetupQualId28" value="undefined">
+
+	<input type="checkbox" name="multiClassGridTogetherRadio" id="multiClassGridTogetherRadio" value="1" >
+                   
+    <select name="sessionType" id="sessionTypeSelect" >
+        <option value="1" class="No-Race">Open practice only</option>
+        <option value="2" class="Contains-Race">Open practice + lone qualifier + race</option>
+        <option value="3" class="Contains-Race">Open practice + open qualifier + race</option>
+        <option value="4" class="Contains-Race">Open qualifier + race</option>
+        <option value="20" class="Contains-Race">Heat Racing</option>
+    </select>
+       
+    <select name="numServers" id="numServersSelect">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+        <option value="10">10</option>
+    </select>
+   
+    <select name="isFinal" id="roundDesignationSelect" >
+        <option value="0">Preliminary round</option>
+        <option value="1">Final round</option>
+    </select>
+
+    <select name="practiceLength" id="practiceSelect">
+        <option value="5">5 mins</option>
+        <option value="10">10</option>
+        <option value="20">20</option>
+        <option value="30" selected="selected">30</option>
+        <option value="40">40</option>
+        <option value="50">50</option>
+        <option value="60">60</option>
+    </select>
+           
+	<select name="qualLengthLaps" id="qualLapSelect">
+	    <option value="1">1 lap</option>
+	    <option value="2">2 laps</option>
+	    <option value="3">3 laps</option>
+	    <option value="4">4 laps</option>
+	</select>
+	<select name="qualLengthMins" id="qualMinSelect">
+	    <option value="5">5 mins</option>
+	    <option value="10">10 mins</option>
+	    <option value="15">15 mins</option>
+	    <option value="20">20 mins</option>
+	    <option value="25">25 mins</option>
+	    <option value="30">30 mins</option>
+	    <option value="35">35 mins</option>
+	    <option value="40">40 mins</option>
+	    <option value="45">45 mins</option>
+	    <option value="50">50 mins</option>
+	    <option value="55">55 mins</option>
+	    <option value="60">60 mins</option>
+	</select>
+               
+    <input name="raceLength" id="raceLengthInput" >
+    <select name="raceLengthType" id="raceLengthSelect">
+        <option value="2">Mins</option>
+        <option value="3">Laps + Mins</option>
+    </select>
+    <select name="numJokerLaps" id="numJokersSelect">
+        <option value="0">0</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+        <option value="10">10</option>
+    </select>
+       
+    <input type="hidden" name="gridId" id="gridId">
+    <input type="hidden" name="rootId" id="rootId">
+    <input type="hidden" name="parentId" id="parentId">
+    <input type="hidden" name="tourneyAction" id="tourneyAction" value="new">
+   
+    <input type="hidden" name="startType" id="startType">
+  
+    <select name="numFastTows" id="towSelect">
+        <option value="-1">unlimited</option>
+        <option value="0">0</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+        <option value="10">10</option>
+    </select>
+       
+    <select name="fullCourseCautions_ignore" id="cautionSelect" >
+        <option value="0">admin cautions with lucky dog</option>
+        <option value="1">admin cautions no lucky dog</option>
+        <option value="2">race control cautions with lucky dog (oval)</option>
+        <option value="3">race control cautions no lucky dog (oval)</option>
+    </select>
+    <input id="fullCourseCautionsHidden" type="hidden" name="fullCourseCautions" value="false">
+    <input id="luckyDogHidden" type="hidden" name="luckyDog" value="0">
+      
+    <select name="restartType" id="restartSelect">
+        <option value="0">single file, lapped keep position</option>
+        <option value="3">single file, lapped cars to the back</option>
+        <option value="1">double file, lapped cars to the inside</option>
+        <option value="2">double file, lapped cars to the back</option>
+        <option value="4">double file, lapped cars to the inside 3x, then single file</option>
+        <option value="5">double file, lapped cars to the back 3x, then single file</option>
+    </select>
+       
+    <input type="hidden" value="1" name="leaveMarbles" id="Hosted-ClearMarbles-Toggle-Hidden">
+    <input type="checkbox" value="1" id="Hosted-ClearMarbles-Toggle">
+    <input type="checkbox" id="Hosted-GenerateMarbles-Toggle-0">
+                    
+    <input type="hidden" value="55" id="Hosted-Rubber-Amount-0" name="rubberLevelPractice">
+                          
+    <input type="checkbox" id="Hosted-GenerateMarbles-Toggle-1" checked="checked">
+                   
+    <input type="hidden" value="-1" id="Hosted-Rubber-Amount-1" name="rubberLevelQualify">
+                            
+    <input type="checkbox" id="Hosted-GenerateMarbles-Toggle-2" checked="checked">
+                  
+    <input type="hidden" value="-1" id="Hosted-Rubber-Amount-2" name="rubberLevelRace">
+                            
+    <input type="checkbox" name="driverChanges" value="0"  toggleTeamDriving" id="toggleTeamDriving">
+       
+    <select id="minTeamDrivers" name="minTeamDrivers">
+        <option value="1" selected="selected">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+        <option value="10">10</option>
+        <option value="11">11</option>
+        <option value="12">12</option>
+        <option value="13">13</option>
+        <option value="14">14</option>
+        <option value="15">15</option>
+    </select>
+
+    <select id="maxTeamDrivers" name="maxTeamDrivers">
+        <option value="2" selected="selected">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+        <option value="10">10</option>
+        <option value="11">11</option>
+        <option value="12">12</option>
+        <option value="13">13</option>
+        <option value="14">14</option>
+        <option value="15">15</option>
+        <option value="0">No Limit</option>
+    </select>
+	<input type="checkbox" value="1" name="qualifierMustStartRace" id="check-qualifierMustStartRace">
+    <select id="driver-change-rule" name="driverChangeRule">
+        <option value="0">None</option>
+        <option value="1">Drive Fair Share</option>
+    </select>
+    <textarea name="sessionDesc" id="sessionDesc"></textarea>
+    </div>
+
+    
+   <!-- OPTIONAL -->
+            
+    <input id="maxIncidentsCheckbox" type="checkbox" name="maxIncidentsCheckbox">
+   
+    <input id="maxIncidentsInput" name="maxIncidents">
+   
+    <input id="irCheckbox" type="checkbox" name="irCheckbox">
+   <input id="minIRInput" name="minIR">
+   <input id="maxIRInput" name="maxIR">
+     <input id="srCheckbox" type="checkbox" name="srCheckbox">
+    <select " name="minLicLevel" id="minSRSelect">
+        <option value="1">Rookie (1.0)</option>
+        <option value="2">Rookie (2.0)</option>
+        <option value="3">Rookie (3.0)</option>
+        <option value="4">Rookie (4.0)</option>
+        <option value="5">Class D (1.0)</option>
+        <option value="6">Class D (2.0)</option>
+        <option value="7">Class D (3.0)</option>
+        <option value="8">Class D (4.0)</option>
+        <option value="9">Class C (1.0)</option>
+        <option value="10">Class C (2.0)</option>
+        <option value="11">Class C (3.0)</option>
+        <option value="12">Class C (4.0)</option>
+        <option value="13">Class B (1.0)</option>
+        <option value="14">Class B (2.0)</option>
+        <option value="15">Class B (3.0)</option>
+        <option value="16">Class B (4.0)</option>
+        <option value="17">Class A (1.0)</option>
+        <option value="18">Class A (2.0)</option>
+        <option value="19">Class A (3.0)</option>
+        <option value="20">Class A (4.0)</option>
+        <option value="21">Pro (1.0)</option>
+        <option value="22">Pro (2.0)</option>
+        <option value="23">Pro (3.0)</option>
+        <option value="24">Pro (4.0)</option>
+        <option value="25">Pro/WC (1.0)</option>
+        <option value="26">Pro/WC (2.0)</option>
+        <option value="27">Pro/WC (3.0)</option>
+        <option value="28">Pro/WC (4.0)</option>
+    </select>
+    <select " name="maxLicLevel" id="maxSRSelect" >
+        <option value="1">Rookie (1.0)</option>
+        <option value="2">Rookie (2.0)</option>
+        <option value="3">Rookie (3.0)</option>
+        <option value="4">Rookie (4.0)</option>
+        <option value="5">Class D (1.0)</option>
+        <option value="6">Class D (2.0)</option>
+        <option value="7">Class D (3.0)</option>
+        <option value="8">Class D (4.0)</option>
+        <option value="9">Class C (1.0)</option>
+        <option value="10">Class C (2.0)</option>
+        <option value="11">Class C (3.0)</option>
+        <option value="12">Class C (4.0)</option>
+        <option value="13">Class B (1.0)</option>
+        <option value="14">Class B (2.0)</option>
+        <option value="15">Class B (3.0)</option>
+        <option value="16">Class B (4.0)</option>
+        <option value="17">Class A (1.0)</option>
+        <option value="18">Class A (2.0)</option>
+        <option value="19">Class A (3.0)</option>
+        <option value="20">Class A (4.0)</option>
+        <option value="21">Pro (1.0)</option>
+        <option value="22">Pro (2.0)</option>
+        <option value="23">Pro (3.0)</option>
+        <option value="24">Pro (4.0)</option>
+        <option value="25">Pro/WC (1.0)</option>
+        <option value="26">Pro/WC (2.0)</option>
+        <option value="27">Pro/WC (3.0)</option>
+        <option value="28">Pro/WC (4.0)</option>
+    </select>
+    <input id="clubCheckbox" type="checkbox" name="clubCheckbox" >
+    <input id="leagueCheckbox" type="checkbox" name="leagueCheckbox">
+    <input type="hidden" name="sessionAdmins" id="sessionAdmins">
+    <select name="recentSelect" id="recentSelect">
+        <option value="0">---</option>
+    </select>
+
+    <select name="fsSelect" id="fsSelect">
+      <option value="73748">Michael Villa</option>
+    </select>
+   
+    <input name="memberName" id="memberName" type="text" size="30">
+
+    <select id="hardcoreSelect" name="hardcoreLevel">
+        <option value="0">Disallow all driving aids (but clutch assist OK)</option>
+        <option value="1">Allow all driving aids</option>
+        <option value="3">Allow all driving aids, plus relaxed camera views</option>
+    </select>
+		<input id="restrictResCheckbox" type="checkbox" name="restrictResults">
+  	<input id="restrictViewingCheckbox" type="checkbox" name="restrictViewing">
+    <select id="pacecarSelect" name="paceCarId">
+        <option value="0">Default</option>
+        <option value="53">Pace Car - Ruf RT12R</option>
+        <option value="32">Pace Car - Mustang</option>
+    </select>
+           
+    <input type="hidden" name="isTourney" value="0">
+</form>
